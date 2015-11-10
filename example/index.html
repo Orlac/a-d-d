@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/bower_components/angular/angular-csp.css">
+    <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog.css">
+    <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog-theme-plain.css">
+    <link rel="stylesheet" href="/bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css">
+    <script src="../bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+<div class="col-md-12 bg" ng-controller="AppCtrl as ctrl">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <datetimepicker-dialog 
+                template="/src/template.html"
+                ng-model="ctrl.date"
+                date-picker-config="{ startView:'day', minuteStep: 1 }"
+                on-set-time="ctrl.dateSet()" ></datetimepicker-dialog>
+        </div>
+    </div>
+
+</div>
+
+<script src="/example/app.js"></script>
+
+<script src="/bower_components/moment/moment.js"></script>
+<script src="/bower_components/moment/locale/ru.js"></script>
+<script src="/bower_components/ng-dialog/js/ngDialog.min.js"></script>
+<script src="/bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+<script src="/src/angular-datetimepicker-dialog.js"></script>
+
+</body>
+</html>

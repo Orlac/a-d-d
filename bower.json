@@ -1,0 +1,26 @@
+{
+  "name": "angular-datetimepicker-dialog",
+  "homepage": "https://github.com/Orlac/a-d-d",
+  "authors": [
+    "antonio <orlac@rambler.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.7",
+    "ng-dialog": "~0.5.5",
+    "angular-bootstrap-datetimepicker": "~0.3.15",
+    "moment-timezone": "~0.4.1"
+  }
+}

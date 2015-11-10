@@ -1,0 +1,14 @@
+{
+  "name": "angular-datetimepicker-dialog",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node --debug app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "request": "~2.61.0"
+  }
+}
